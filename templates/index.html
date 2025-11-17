@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Online Shopping Store</h1>
+
+<div class="grid">
+    {% for p in products %}
+    <div class="card">
+        <img src="/static/images/{{ p.image }}">
+        <h3>{{ p.name }}</h3>
+        <p>₹{{ p.price }}</p>
+        <a href="/product/{{ p.id }}" class="btn">View Details</a>
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
