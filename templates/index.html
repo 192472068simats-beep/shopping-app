@@ -1,22 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Shopping App</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Online Shopping Store</h1>
+<!-- HEADER -->
+<header>
+    <div class="logo">ShopEasy</div>
+    <input type="text" placeholder="Search for products, brands and more..." class="search-box">
+    <button class="login-btn">Login</button>
+</header>
 
-<div class="grid">
-    {% for p in products %}
-    <div class="card">
-        <img src="/static/images/{{ p.image }}">
-        <h3>{{ p.name }}</h3>
-        <p>₹{{ p.price }}</p>
-        <a href="/product/{{ p.id }}" class="btn">View Details</a>
+<!-- CATEGORY BAR -->
+<div class="category-bar">
+    <span>Women</span>
+    <span>Men</span>
+    <span>Electronics</span>
+    <span>Home</span>
+    <span>Beauty</span>
+    <span>Sports</span>
+</div>
+
+<!-- PRODUCT GRID -->
+<h2 class="section-title">Trending Products</h2>
+
+<div class="product-grid">
+
+    <!-- PRODUCT CARD -->
+    <div class="product-card">
+        <div class="product-placeholder"></div>
+        <h3>Stylish Kurti</h3>
+        <p class="price">₹399</p>
+        <button class="btn">View Details</button>
     </div>
-    {% endfor %}
+
+    <div class="product-card">
+        <div class="product-placeholder"></div>
+        <h3>Smart Watch</h3>
+        <p class="price">₹1299</p>
+        <button class="btn">View Details</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-placeholder"></div>
+        <h3>Wireless Earbuds</h3>
+        <p class="price">₹799</p>
+        <button class="btn">View Details</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-placeholder"></div>
+        <h3>Casual Shoes</h3>
+        <p class="price">₹999</p>
+        <button class="btn">View Details</button>
+    </div>
+
 </div>
 
 </body>
