@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Fashion Kurti",
+    "price": 399,
+    "image": "kurti.jpg",
+    "description": "Trendy cotton kurti for women."
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": 1299,
+    "image": "smartwatch.jpg",
+    "description": "Bluetooth smartwatch with health tracking."
+  },
+  {
+    "id": 3,
+    "name": "Wireless Earbuds",
+    "price": 799,
+    "image": "earbuds.jpg",
+    "description": "Noise-cancelling earbuds with long battery life."
+  }
+]
